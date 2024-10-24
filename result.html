@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Detection Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .result-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container result-container">
+        <h2 class="text-center">COVID-19 Detection Result</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>First Name:</strong> {{ firstName }}</p>
+                <p><strong>Last Name:</strong> {{ lastName }}</p>
+                <p><strong>Email:</strong> {{ email }}</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Age:</strong> {{ age }}</p>
+                <p><strong>Gender:</strong> {{ gender }}</p>
+                <p><strong>Prediction:</strong> {{ prediction }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
